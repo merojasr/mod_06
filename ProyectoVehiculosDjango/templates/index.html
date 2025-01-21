@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Catálogo de Vehículos</h1>
+<section class="py-5 bg-light text-center">
+    <div class="container">
+        <h2 class="mb-4">¿Buscas un auto nuevo o usado?</h2>
+        <p class="mb-5">En Vehículos XYZ encontrarás una amplia selección de automóviles de todas las marcas, 
+            al alcance de tu presupuesto.</p>
+        <a href="#contacto" class="btn btn-primary btn-lg">Contáctanos</a>
+    </div>
+</section>
+
+<section id="servicios" class="py-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h3>Autos Nuevos</h3>
+                <p>Encuentra el auto de tus sueños con garantía de fábrica.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Autos Usados</h3>
+                <p>Seleccionamos los mejores vehículos usados, inspeccionados y listos para ti.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Financiamiento</h3>
+                <p>Opciones flexibles para que adquieras el auto que necesitas.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contacto" class="py-5 bg-dark text-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Contáctanos</h2>
+        <form>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Nombre" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" class="form-control" placeholder="Correo Electrónico" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" rows="5" placeholder="Mensaje" required></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock  %}
