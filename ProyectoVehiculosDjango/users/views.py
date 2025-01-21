@@ -5,17 +5,17 @@ from django.contrib.auth import login
 from . forms import CustomUserCreationForm
 from django.contrib.auth.models import Permission
 
-# Vista para el login
+# ogin
 class CustomLoginView(LoginView):
     template_name = "auth/login.html"
     redirect_authenticated_user = True
     
-# Vista para el logout
+#logout
 class CustomLogoutView(LogoutView):
     template_name = "auth/logout.html"
     next_page = '/'
 
-# Vista para el registrofrom django.shortcuts import render, redirect
+#registrofrom django.shortcuts import render, redirect
 from django.contrib.auth import login
 from .forms import CustomUserCreationForm
 
