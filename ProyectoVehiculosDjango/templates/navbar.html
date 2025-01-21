@@ -21,20 +21,20 @@
       <ul class="navbar-nav ms-auto">
         {% if user.is_authenticated %}
         <li class="nav-item">
-          <span class="nav-link">Bienvenido, {{ user.username }}</span>
+          <span class="nav-link">Hola, {{ user.username }}</span>
         </li>  
         <li class="nav-item">
                 <form action="{% url 'logout' %}" method="POST" style="display: inline;">
                     {% csrf_token %}
-                    <button type="submit" class="nav-link" style="background: none; border: none; color: inherit;">Cerrar Sesión</button>
+                    <button type="submit" class="nav-link" style="background: none; border: none; color: inherit;">Cierre Sesión</button>
                 </form>
             </li>
         {% else %}
             <li class="nav-item">
-                <a class="nav-link" href="{% url 'login' %}">Iniciar Sesión</a>
+                <a class="nav-link" href="{% url 'login' %}">Inicie Sesión</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{% url 'register' %}">Registrarse</a>
+                <a class="nav-link" href="{% url 'register' %}">Registrese</a>
             </li>
         {% endif %}
       </ul>       
